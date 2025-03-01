@@ -4,6 +4,13 @@ import { defineAuth, secret } from '@aws-amplify/backend';
  * Define and configure your auth resource
  * @see https://docs.amplify.aws/gen2/build-a-backend/auth
  */
+
+/**
+ * Important notes
+ * - We need to manuall add cognito domain for external sign in provider like google sign in.
+ * we need to add this domain in google cloud / creadentials page
+ * - User pool domain is automatically created when we use google sign in 
+ */
 export const auth = defineAuth({
   loginWith: {
     /**
