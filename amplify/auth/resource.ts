@@ -10,6 +10,8 @@ import { defineAuth, secret } from '@aws-amplify/backend';
  * - We need to manuall add cognito domain for external sign in provider like google sign in.
  * we need to add this domain in google cloud / creadentials page
  * - User pool domain is automatically created when we use google sign in 
+ * - Amplify Gen 2 enables guest access by default. To disable it, you can update the backend.ts file with the following changes.
+ * We need to add code in backend.ts file
  */
 export const auth = defineAuth({
   loginWith: {
