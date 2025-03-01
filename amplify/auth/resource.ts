@@ -14,6 +14,7 @@ import { defineAuth, secret } from '@aws-amplify/backend';
  * We need to add code in backend.ts file
  */
 export const auth = defineAuth({
+  name: "AwsPractiseProject", // App Client Name
   loginWith: {
     /**
      * Default sign up/in option email & password
